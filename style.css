@@ -9,7 +9,47 @@
   --gold: hsl(31, 77%, 52%);
   --cyan: hsl(184, 100%, 22%);
   --green: hsl(179, 100%, 13%);
+  --lf: "Lexend Deca", sans-serif; /* lf = Lexend Font  */
+  --bf: "Big Shoulders Display", cursive; /* bf = Big Shoulders Font  */
 }
-body{
-    font-size: ;
+body {
+  font-size: 15px;
+  font-family: var(--lf);
+  font-weight: 400;
+}
+h2 {
+  color: hsl(0, 0%, 95%);
+}
+body,
+button {
+  background-color: hsl(0, 0%, 95%);
+}
+#one,
+#two,
+#three {
+  padding: 32px;
+}
+#grid {
+  display: grid;
+  margin: 6vh 4vw;
+  border-radius: 8px;
+  height: 1050px; /* every section gets 350px height */
+}
+#one {
+  background-color: var(--gold);
+  border-radius: 8px 8px 0 0;
+}
+#two {
+  background-color: var(--cyan);
+}
+#three {
+  background-color: var(--green);
+  border-radius: 0 0 8px 8px;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }

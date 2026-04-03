@@ -17,8 +17,11 @@ body {
   font-family: var(--lf);
   font-weight: 400;
 }
-h2 {
+h1 {
   color: hsl(0, 0%, 95%);
+  font-family: var(--bf);
+  font-weight: 700;
+  text-transform: uppercase;
 }
 body,
 button {
@@ -34,6 +37,7 @@ button {
   margin: 6vh 4vw;
   border-radius: 8px;
   height: 1050px; /* every section gets 350px height */
+  box-shadow: 0px 0px 20px 1px gray;
 }
 #one {
   background-color: var(--gold);
@@ -52,4 +56,70 @@ button {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+button {
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 24px;
+  padding: 12px;
+  border: 0px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+#one button {
+  color: var(--gold);
+}
+#two button {
+  color: var(--cyan);
+}
+#three button {
+  color: var(--green);
+}
+button:active {
+  transform: scale(0.95);
+}
+footer {
+  text-align: center;
+  color: var(--cyan);
+}
+a {
+  color: var(--gold);
+}
+@media (min-width: 768px) {
+  #grid {
+    grid-template-columns: repeat(3, 1fr);
+    height: 80vh;
+  }
+  #one {
+    border-radius: 8px 0 0 8px;
+  }
+  #three {
+    border-radius: 0 8px 8px 0;
+  }
+  #one,
+  #two,
+  #three {
+    padding: 64px;
+  }
+
+  #one button:hover {
+    background-color: var(--gold);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    box-shadow: 0px 0px 10px 1px black;
+  }
+  #two button:hover {
+    background-color: var(--cyan);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    box-shadow: 0px 0px 10px 1px black;
+  }
+  #three button:hover {
+    background-color: var(--green);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    box-shadow: 0px 0px 10px 1px black;
+  }
 }

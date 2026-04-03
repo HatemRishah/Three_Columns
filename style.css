@@ -83,6 +83,7 @@ button:active {
 footer {
   text-align: center;
   color: var(--cyan);
+  margin-bottom: 6px;
 }
 a {
   color: var(--gold);
